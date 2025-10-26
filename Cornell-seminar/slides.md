@@ -400,3 +400,11 @@ layout: default
   </ul>
 </div>
 </template>
+
+--- 
+layout: phrases
+title: "Problem"
+shiftValue: left
+---
+
+## Neural networks are inherently interpretive. What happens when we need high precision? How do we deal with mathematical decimation of precision?
