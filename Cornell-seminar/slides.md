@@ -512,3 +512,26 @@ roundedEdges: false
 <template #reference>
 <Reference reference="Colab: David Muller, Colin Ophus, Yimo Han, and others" position="bottom" align="left" offset="20px" fontSize='12px' />
 </template>
+
+--- 
+layout: phrases
+title: "Problem"
+shiftValue: left
+---
+
+## Automated labs rely on preplanned trajectories and protocols. Think of trying to drive a race car with preprogrammed steering angles, throttle, and brake pedal positions -- you would almost certainly crash. Science needs control of dynamical processes at relevant time scales.
+
+---
+layout: default
+---
+
+# Ferroelectric Thin Films: Pulsed Laser Deposition
+
+<div class="relative w-full h-90 overflow-auto">
+  <img
+    src="/pld-workflow/rheed-plume-highlight.png"
+    class="max-w-none object-contain"
+    style="transform: scale(0.60); transform-origin: top left;"
+    alt="Scrollable image"
+  />
+</div>
