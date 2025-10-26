@@ -45,16 +45,15 @@ layout: default
 ---
 
 # Research Philosophy
-
-<div style="position: relative; width: 600px; height: 600px; margin: auto;">
+<div style="position: relative; width: 60%; max-width: 800px; aspect-ratio: 1; margin: auto;">
 
   <!-- Circle 1: Epitaxial Complex Oxide Synthesis -->
   <div v-click="1" style="
     position: absolute;
     top: 0;
-    left: 30px;
-    width: 300px;
-    height: 300px;
+    left: 5%;
+    width: 50%;
+    aspect-ratio: 1;
     border-radius: 50%;
     border: 2px solid black;
     overflow: hidden;
@@ -71,13 +70,13 @@ layout: default
     "></div>
     <div style="
       position: relative;
-      top: 20px;
+      top: 10%;
       width: 100%;
       text-align: center;
       font-weight: bold;
       z-index: 1;
     ">
-      <h2 style="font-size: 24px;">Epitaxial Complex<br>Oxide Synthesis</h2>
+      <h2 style="font-size: min(4vw, 20px); line-height: 1.2;">Epitaxial Complex<br>Oxide Synthesis</h2>
     </div>
   </div>
 
@@ -85,9 +84,9 @@ layout: default
   <div v-click="2" style="
     position: absolute;
     top: 0;
-    left: 250px;
-    width: 300px;
-    height: 300px;
+    left: 45%;
+    width: 50%;
+    aspect-ratio: 1;
     border-radius: 50%;
     border: 2px solid black;
     overflow: hidden;
@@ -104,23 +103,23 @@ layout: default
     "></div>
     <div style="
       position: relative;
-      top: 20px;
+      top: 10%;
       width: 100%;
       text-align: center;
       font-weight: bold;
       z-index: 1;
     ">
-      <h2 style="font-size: 24px;">Multidimensional<br>Spectroscopy</h2>
+      <h2 style="font-size: min(4vw, 20px); line-height: 1.2;">Multidimensional<br>Spectroscopy</h2>
     </div>
   </div>
 
   <!-- Circle 3: Machine Learning -->
   <div v-click="3" style="
     position: absolute;
-    top: 150px;
-    left: 30px;
-    width: 300px;
-    height: 300px;
+    top: 25%;
+    left: 5%;
+    width: 50%;
+    aspect-ratio: 1;
     border-radius: 50%;
     border: 2px solid black;
     overflow: hidden;
@@ -137,23 +136,23 @@ layout: default
     "></div>
     <div style="
       position: relative;
-      top: 200px;
+      top: 67%;
       width: 100%;
       text-align: center;
       font-weight: bold;
       z-index: 1;
     ">
-      <h2 style="font-size: 24px;">Machine<br>Learning</h2>
+      <h3 style="font-size: min(4vw, 20px); line-height: 1.2;">Machine<br>Learning</h3>
     </div>
   </div>
 
   <!-- Circle 4: Heterogeneous Computing -->
   <div v-click="4" style="
     position: absolute;
-    top: 150px;
-    left: 250px;
-    width: 300px;
-    height: 300px;
+    top: 25%;
+    left: 45%;
+    width: 50%;
+    aspect-ratio: 1;
     border-radius: 50%;
     border: 2px solid black;
     overflow: hidden;
@@ -170,13 +169,13 @@ layout: default
     "></div>
     <div style="
       position: relative;
-      top: 200px;
+      top: 67%;
       width: 100%;
       text-align: center;
       font-weight: bold;
       z-index: 1;
     ">
-      <h2 style="font-size: 24px;">Heterogeneous<br>Computing</h2>
+      <h2 style="font-size: min(4vw, 20px); line-height: 1.2;">Heterogeneous<br>Computing</h2>
     </div>
   </div>
 
