@@ -475,3 +475,13 @@ layout: default
 ]" scale="0.85" style="margin-top: -40px; margin-bottom: -150px" />
 
 <Reference reference="Colab: David Muller, Colin Ophus, Yimo Han, and others" position="bottom" align="left" offset="20px" fontSize='12px' />
+
+---
+layout: default
+---
+
+# Improved Robustness to Background Noise
+
+<iframe src="stem4d/mae_vs_bkg_noise_plot_enhanced.html" width="100%" height="400px" style="margin: 0;"></iframe>
+
+<Reference reference="Colab: David Muller, Colin Ophus, Yimo Han, and others" position="bottom" align="left" offset="20px" fontSize='12px' />
