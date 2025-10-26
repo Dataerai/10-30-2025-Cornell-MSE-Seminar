@@ -30,9 +30,9 @@ layout: center
 
 #### {{ new Date().toLocaleDateString() }} 
 
-<!-- <div @click="$slidev.nav.next" class="mt-12 py-1" hover:bg="white op-10">
-  Press Space for next page <carbon:arrow-right />
-</div> -->
+<QrGrid :items="[
+  { title: 'Slides', url: 'https://m3-learning.github.io/ISAF-PFM-Tutorial' },
+]" :columns="1" />
 
 <div class="abs-br m-6 text-xl">
   <a href="https://github.com/m3-learning" target="_blank" class="slidev-icon-btn">
