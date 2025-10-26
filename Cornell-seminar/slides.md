@@ -215,3 +215,24 @@ layout: default
 # Ferroelectric Thin Films: Pulsed Laser Deposition
 
 <CrossfadeImages :images="['pld-schematic/PLD-image.png']" :scale="0.8" style="margin-top: -50px" />
+
+--- 
+layout: phrases
+title: "Problem"
+shiftValue: left
+---
+
+## Materials Science is defined by order, periodicity, and symmetry. Can AI understand this in a meaningful way?
+
+
+---
+layout: default
+---
+
+# Order, Periodicity, and Symmetry
+
+<CrossfadeImages :images="[
+    'order-periodicity-symmetry.jpeg'
+]" :scale="0.7" style="margin-top: -50px; margin-bottom: -60px" />
+
+- Nature and materials science are shaped by order, periodicity, and symmetry
