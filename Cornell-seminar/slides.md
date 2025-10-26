@@ -485,3 +485,30 @@ layout: default
 <iframe src="stem4d/mae_vs_bkg_noise_plot_enhanced.html" width="100%" height="400px" style="margin: 0;"></iframe>
 
 <Reference reference="Colab: David Muller, Colin Ophus, Yimo Han, and others" position="bottom" align="left" offset="20px" fontSize='12px' />
+
+---
+layout: ncolumns
+titleText: "4D-STEM: Strain Mapping Experimental Results"
+columns: 2
+images:
+  - stem4d/experiment/figure-4-1.svg
+  - stem4d/experiment/figure-4-2.svg
+titleClicks: [1,2]
+columnWidths: [1.5, 2]
+textboxHeight: 10
+mainHeight: 55
+roundedEdges: false
+---
+
+
+<template #text>
+<div v-click="2" class="text-left">
+<ul class="list-disc">
+  <li>The experimental results demonstrate the strain mapping capabilities of 4D-STEM, showing both the spatial distribution and magnitude of strain fields in the sample.</li>
+</ul>
+</div>
+</template>
+
+<template #reference>
+<Reference reference="Colab: David Muller, Colin Ophus, Yimo Han, and others" position="bottom" align="left" offset="20px" fontSize='12px' />
+</template>
