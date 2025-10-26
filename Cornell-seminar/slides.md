@@ -274,9 +274,63 @@ mainHeight: 60
 
 <template #text>
 <div v-click="3" class="text-left">
-  <ul class="list-disc pl-4">
+  <ul class="list-disc pl-4" style="margin-top: -40px;">
     <li>Out of distribution cross validation fails because model cannot learn the concept of symmetry</li>
   </ul>
 </div>
 </template>
 
+---
+layout: ncolumns
+titleText: "Cross Validation: 100K Training Images"
+columns: 3
+images:
+  - sym/confusion_matrix/100k train.svg
+  - sym/confusion_matrix/100k valid.svg
+  - sym/confusion_matrix/100k atoms.svg
+titles:
+  - "Training"
+  - "Validation"
+  - "Cross Validation"
+titleClicks: [1, 2, 3]
+columnWidths: [1,1,1]
+textboxHeight: 20
+mainHeight: 60
+---
+
+
+<template #text>
+<div v-click="3" class="text-left">
+  <ul class="list-disc pl-4" style="margin-top: -40px;">
+    <li>Out of distribution cross validation fails because model cannot learn the concept of symmetry</li>
+  </ul>
+</div>
+</template>
+
+---
+layout: ncolumns
+titleText: "Cross Validation: 10M Training Images"
+columns: 3
+images:
+  - sym/confusion_matrix/10m train.svg
+  - sym/confusion_matrix/10m valid.svg
+  - sym/confusion_matrix/10m atoms.svg
+titles:
+  - "Training"
+  - "Validation"
+  - "Cross Validation"
+titleClicks: [1, 2, 3]
+columnWidths: [1,1,1]
+textboxHeight: 20
+mainHeight: 60
+---
+
+
+<template #text>
+<div v-click="3" class="text-left" style="margin-top: -40px;">
+  <ul class="list-disc pl-4">
+    <li>10M vision transformers start to learn robust understanding of symmetry within statistical bounds of the training dataset</li>
+    <li>Massive scale data not typical in materials science or chemistry is required</li>
+  </ul>
+</div>
+</template>
