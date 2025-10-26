@@ -180,3 +180,18 @@ layout: default
   </div>
 
 </div>
+
+---
+layout: default
+---
+
+# Automated Labs
+
+<ImageWithText
+  textAbove="Reproducibility at Scale: Robots replacing grad students?"
+  textBelow="Automated Labs"
+  :imageScale="0.35"
+  style="margin-top: -40px"
+>
+  <img src="/automated-lab-introduction/automated-lab.png" alt="Automated Lab" />
+</ImageWithText>
