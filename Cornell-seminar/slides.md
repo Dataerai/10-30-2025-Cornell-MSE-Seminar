@@ -443,3 +443,21 @@ layout: default
   'stem4d/ccstae/4.png',
   'stem4d/ccstae/5.png',
 ]" scale="0.95" style="margin-top: -20px; margin-bottom: -150px" />
+
+<Reference reference="Colab: David Muller, Colin Ophus, Yimo Han, and others" position="bottom" align="left" offset="20px" fontSize='12px' />
+
+---
+layout: default
+titleText: "4D-STEM: Strain Mapping"
+mainHeight: 70
+textboxHeight: 0
+reference: "Colab: David Muller, Colin Ophus, Yimo Han, and others" 
+---
+
+# 4D-STEM: Strain Mapping
+
+<CrossfadeImages :images="[
+  'stem4d/simulated-data.png',
+]" scale="0.85" style="margin-top: -50px; margin-bottom: -150px" />
+
+<Reference reference="Colab: David Muller, Colin Ophus, Yimo Han, and others" position="bottom" align="left" offset="20px" fontSize='12px' />
