@@ -252,3 +252,31 @@ layout: default
 
 - In 2D, symmetries are defined by the 17 wallpaper groups -> It is important to ask how effective are neural networks at learning symmetries from images?
 - Generate a dataset with 10k total images.
+
+---
+layout: ncolumns
+titleText: "Cross Validation: 10K Training Images"
+columns: 3
+images:
+  - sym/confusion_matrix/10k train.svg
+  - sym/confusion_matrix/10k valid.svg
+  - sym/confusion_matrix/10k atoms.svg
+titles:
+  - "Training"
+  - "Validation"
+  - "Cross Validation"
+titleClicks: [1, 2, 3]
+columnWidths: [1,1,1]
+textboxHeight: 20
+mainHeight: 60
+---
+
+
+<template #text>
+<div v-click="3" class="text-left">
+  <ul class="list-disc pl-4">
+    <li>Out of distribution cross validation fails because model cannot learn the concept of symmetry</li>
+  </ul>
+</div>
+</template>
+
