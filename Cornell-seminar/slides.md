@@ -379,9 +379,7 @@ reference:
 - JPEG Compression: replicates images by decomposing them into a sum of basis images of the discrete cosine transform (DCT) --> There is no understanding of the image
 - Neural Networks: can learn to reconstruct images from a compressed representation --> We need physics to make extrapolations from learned representations
 
-<Reference reference="https://medium.com/geekculture/how-jpeg-compression-works-a751cd877c8c" position="bottom" align="left" offset="20px" fontSize='12px' />
-
-
+<Reference href="https://medium.com/geekculture/how-jpeg-compression-works-a751cd877c8c" reference="Reference: How JPEG Compression Works" position="bottom" align="left" offset="20px" fontSize='12px' />
 
 ---
 layout: default
