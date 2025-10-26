@@ -189,9 +189,29 @@ layout: default
 
 <ImageWithText
   textAbove="Reproducibility at Scale: Robots replacing grad students?"
-  textBelow="Automated Labs"
+  textBelow="Automated Labs are all the rage, but are they really useful?"
   :imageScale="0.35"
   style="margin-top: -40px"
 >
   <img src="/automated-lab-introduction/automated-lab.png" alt="Automated Lab" />
 </ImageWithText>
+
+---
+layout: default
+---
+
+# Ferroelectric Thin Films: Pulsed Laser Deposition
+
+<CrossfadeImages :images="[
+  'pld-schematic/PLD-Schematic-All-m2.svg',
+  'pld-schematic/PLD-Schematic-All-m1.svg',
+  'pld-schematic/PLD-Schematic-All.svg',
+]" />
+
+---
+layout: default
+---
+
+# Ferroelectric Thin Films: Pulsed Laser Deposition
+
+<CrossfadeImages :images="['pld-schematic/PLD-image.png']" :scale="0.8" style="margin-top: -50px" />
