@@ -430,3 +430,16 @@ roundedEdges: false
 <Reference reference="Colab: David Muller, Colin Ophus, Yimo Han, and others" position="bottom" align="left" offset="20px" fontSize='12px' />
 </template>
 
+---
+layout: default
+---
+
+# 4D-STEM: Strain Mapping
+
+<CrossfadeImages :images="[
+  'stem4d/ccstae/1.png',
+  'stem4d/ccstae/2.png',
+  'stem4d/ccstae/3.png',
+  'stem4d/ccstae/4.png',
+  'stem4d/ccstae/5.png',
+]" scale="0.95" style="margin-top: -20px; margin-bottom: -150px" />
