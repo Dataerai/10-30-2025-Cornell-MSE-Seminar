@@ -461,3 +461,17 @@ reference: "Colab: David Muller, Colin Ophus, Yimo Han, and others"
 ]" scale="0.85" style="margin-top: -50px; margin-bottom: -150px" />
 
 <Reference reference="Colab: David Muller, Colin Ophus, Yimo Han, and others" position="bottom" align="left" offset="20px" fontSize='12px' />
+
+---
+layout: default
+---
+
+# 4D-STEM: Strain Mapping
+
+<CrossfadeImages :images="[
+  'stem4d/noisy-data/1.png',
+  'stem4d/noisy-data/2.png',
+  'stem4d/noisy-data/3.png',
+]" scale="0.85" style="margin-top: -40px; margin-bottom: -150px" />
+
+<Reference reference="Colab: David Muller, Colin Ophus, Yimo Han, and others" position="bottom" align="left" offset="20px" fontSize='12px' />
