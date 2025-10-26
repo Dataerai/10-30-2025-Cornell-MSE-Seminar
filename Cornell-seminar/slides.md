@@ -18,6 +18,9 @@ transition: slide-left
 # enable MDC Syntax: https://sli.dev/features/mdc
 mdc: true
 layout: center
+
+styles:
+  - './style.css'
 ---
 
 # Trust, Trace, Transform: Data-Centric Materials Discovery with FPGA Inference, Kubernetes Orchestration, and Dataerai Curation
@@ -236,3 +239,16 @@ layout: default
 ]" :scale="0.7" style="margin-top: -50px; margin-bottom: -60px" />
 
 - Nature and materials science are shaped by order, periodicity, and symmetry
+
+---
+layout: default
+---
+
+# Wallpaper Group Symmetries
+
+<CrossfadeImages :images="[
+  'sym/Wallpaper-group-symmetry.svg',
+]" :scale="1" style="margin-top: -80px; margin-bottom: -80px" />
+
+- In 2D, symmetries are defined by the 17 wallpaper groups -> It is important to ask how effective are neural networks at learning symmetries from images?
+- Generate a dataset with 10k total images.
