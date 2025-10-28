@@ -553,3 +553,20 @@ roundedEdges: false
 <template #reference>
 <Reference reference="Colab: R. Ramesh, Lane Martin (Rice), John Heron (Michigan)" position="bottom" align="left" offset="20px" fontSize='12px' />
 </template>
+
+---
+layout: default
+mainHeight: 75
+textboxHeight: 0
+---
+
+# RHEED High-Speed (>500 Hz)
+
+<CrossfadeImages :images="[
+    'RHEED/rheed-frame-grabber.png',
+]" 
+style="margin-top: -50px; margin-bottom: -150px" />
+
+<template #reference>
+<Reference reference="Colab: R. Ramesh, Lane Martin (Rice), John Heron (Michigan)" position="bottom" align="left" offset="20px" fontSize='12px' />
+</template>
