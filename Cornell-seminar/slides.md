@@ -646,9 +646,11 @@ textboxHeight: 0
 <Reference reference="Colab: R. Ramesh, Lane Martin (Rice), John Heron (Michigan)" position="bottom" align="left" offset="20px" fontSize='12px' />
 </template>
 
+
 ---
 layout: ncolumns
 columns: 2
+titleText: "Plume Dynamics Metrics"
 images:
   - plume-dynamics/4-Plume_metrics.png
   - null
@@ -657,15 +659,16 @@ titles:
  - null
 titleClicks: [1, 2]
 columnWidths: [1, 1]
-textboxHeight: 0
-mainHeight: 65
+textboxHeight: 20
+mainHeight: 55
 roundedEdges: false
+imageScale: 0.6
+
 ---
 
-# Plume Dynamics Metrics
 
-<template #col1>
-<div v-click="2" class="text-left gap-4 flex-1">
+<template #col2>
+<div v-click="2" class="text-left gap-4 flex-1 justify-start">
     <ul class="list-disc pl-4">
       <li>Computer Vision can be used to characterize the quantify the plume dynamics</li> 
       <li>There are no clear statistically significant trends in the average plume dynamics metrics</li>
