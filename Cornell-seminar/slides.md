@@ -798,24 +798,16 @@ textboxHeight: 20
 
 # From Static to Dynamic Control
 
-<CrossfadeImages :images="[
-    'fastml/plasma-control.gif',
-    ]" scale="1" style="margin-top: -50px; margin-bottom: -20px"/>
-
-<template #text>
-  <div class="text-left">
-    <ul class="list-disc pl-4">
-      <li> We need ML control systems to control dynamic non-equilibrium processes in materials manufacturing</li>
-    </ul>
-  </div>
-</template>
+<CrossfadeImages 
+  :images="['fastml/plasma-control.gif']" 
+  scale="0.8" 
+  style="margin-top: -50px; margin-bottom: -20px">
+  <template #text>
+      <li style="margin-top: -100px">We need ML control systems to control dynamic non-equilibrium processes in materials manufacturing</li>
+  </template>
+</CrossfadeImages>
 
 <Reference reference="NSF 2320600: Platform for Accessible Data-Intensive Science and Eng." position="bottom" align="left" offset="20px" fontSize='12px' />
-
-
-<!-- <template #reference>
-<Reference reference="DeepMind: Degrave, J., Felici, F., Buchli, J. et al. Magnetic control of tokamak plasmas through deep reinforcement learning. Nature 602, 414–419 (2022). https://doi.org/10.1038/s41586-021-04301-9" position="bottom" align="left" offset="20px" fontSize='12px' />
-</template> -->
 
 ---
 layout: default
