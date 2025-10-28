@@ -688,23 +688,13 @@ mainHeight: 55
 textboxHeight: 10
 ---
 
-<CrossfadeImages :images="[
-  'plume-dynamics/5-Plume_metrics_violinplot.svg',
-]" />
+# Statistical Analysis of Plume Dynamics
 
-::text::
-- Statistical distribution of the plume dynamics are bimodal, and heavy tailed for first growths
-
----
-layout: default
-titleText: "Heatmap of Plume Area"
-mainHeight: 55
-textboxHeight: 10
----
-
-<CrossfadeImages :images="[
-  'plume-dynamics/5_Plume_Area_Heatmap.png',
-]" />
-
-::text::
-- Heatmaps of plume area show anomalous behavior close to edge of the target
+<CrossfadeImages 
+  :images="['plume-dynamics/5-Plume_metrics_violinplot.svg']" 
+  scale="0.8" 
+  style="margin-top: -50px; margin-bottom: -20px">
+  <template #text>
+    <li style="margin-top: -50px">Statistical distribution of the plume dynamics are bimodal, and heavy tailed for first growths</li>
+  </template>
+</CrossfadeImages>
