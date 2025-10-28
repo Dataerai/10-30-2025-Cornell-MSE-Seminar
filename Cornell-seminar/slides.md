@@ -775,19 +775,16 @@ textboxHeight: 0
 
 # HLS4ML : Real-Time ML on FPGAs
 
-<CrossfadeImages :images="[
-    'fastml/hls4ml.jpg',
-    ]" scale="0.8" style="margin-top: -50px; margin-bottom: -20px"/>
-
-<template #text>
-  <div class="text-left">
-    <ul class="list-disc pl-4">
-      <li>Accessible/usable codesign workflow; open-source, targets multiple devices</li>
-      <li>Support for reduced precision and pruning</li>
-      <li>Spatial dataflow architectures for low latency</li>
-    </ul>
-  </div>
-</template>
+<CrossfadeImages 
+  :images="['fastml/hls4ml.jpg']" 
+  scale="0.7" 
+  style="margin-top: -80px; margin-bottom: -20px">
+  <template #text>
+      <li style="margin-top: -100px">Accessible/usable codesign workflow; open-source, targets multiple devices</li>
+      <li style="margin-top: -0px">Support for reduced precision and pruning</li>
+      <li style="margin-top: -0px">Spatial dataflow architectures for low latency</li>
+  </template>
+</CrossfadeImages>
 
 <template #reference>
 <Reference reference="Award: NSF 2320600: MRI: Track 2 Platform for Accessible Data-Intensive Science and Engineering" position="bottom" align="left" offset="20px" fontSize='12px' />
@@ -803,7 +800,7 @@ textboxHeight: 20
 
 <CrossfadeImages :images="[
     'fastml/plasma-control.gif',
-    ]" scale="1.2" style="margin-top: -50px; margin-bottom: -20px"/>
+    ]" scale="1" style="margin-top: -50px; margin-bottom: -20px"/>
 
 <template #text>
   <div class="text-left">
@@ -813,7 +810,7 @@ textboxHeight: 20
   </div>
 </template>
 
-<Reference reference="Award: NSF 2320600: MRI: Track 2 Platform for Accessible Data-Intensive Science and Engineering" position="bottom" align="left" offset="20px" fontSize='12px' />
+<Reference reference="NSF 2320600: Platform for Accessible Data-Intensive Science and Eng." position="bottom" align="left" offset="20px" fontSize='12px' />
 
 
 <!-- <template #reference>
@@ -821,7 +818,7 @@ textboxHeight: 20
 </template> -->
 
 ---
-layout: main-custom-layout
+layout: default
 titleText: "From Static to Dynamic Control"
 mainHeight: 40
 textboxHeight: 0
