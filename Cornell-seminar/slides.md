@@ -736,3 +736,61 @@ reference: "Award: NSF 2320600: MRI: Track 2 Platform for Accessible Data-Intens
 <template #reference>
 <Reference reference="Award: NSF 2320600: MRI: Track 2 Platform for Accessible Data-Intensive Science and Engineering" position="bottom" align="left" offset="20px" fontSize='12px' />
 </template>
+
+---
+layout: default
+titleText: "Timing is Everything"
+mainHeight: 80
+textboxHeight: 0
+---
+
+# Timing is Everything
+
+<CrossfadeImages :images="[
+    'fastml/superbowl-superbowllii.gif',
+    'fastml/saquon-saquon-barkley.gif',
+    ]" scale="0.8" style="margin-top: -50px; margin-bottom: -20px"/>
+
+---
+layout: default
+mainHeight: 75
+textboxHeight: 0
+--- 
+
+# Compact Muon Solenoid at the Large Hadron Collider
+
+<CrossfadeImages :images="[
+    'fastml/CMS-m1.png',
+    'fastml/CMS.png',
+    ]" scale="0.8" style="margin-top: -50px; margin-bottom: -20px"/>
+
+<template #reference>
+<Reference reference="Slide Courtesy Nhan Tran FermiLab" position="bottom" align="left" offset="20px" fontSize='12px' />
+</template>
+
+---
+layout: default
+titleText: "HLS4ML : Real-Time ML on FPGAs"
+mainHeight: 55
+textboxHeight: 0
+---
+
+# HLS4ML : Real-Time ML on FPGAs
+
+<CrossfadeImages :images="[
+    'fastml/hls4ml.jpg',
+    ]" scale="0.8" style="margin-top: -50px; margin-bottom: -20px"/>
+
+<template #text>
+  <div class="text-left">
+    <ul class="list-disc pl-4">
+      <li>Accessible/usable codesign workflow; open-source, targets multiple devices</li>
+      <li>Support for reduced precision and pruning</li>
+      <li>Spatial dataflow architectures for low latency</li>
+    </ul>
+  </div>
+</template>
+
+<template #reference>
+<Reference reference="Award: NSF 2320600: MRI: Track 2 Platform for Accessible Data-Intensive Science and Engineering" position="bottom" align="left" offset="20px" fontSize='12px' />
+</template>
