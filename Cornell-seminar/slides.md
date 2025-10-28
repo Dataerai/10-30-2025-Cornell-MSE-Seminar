@@ -626,32 +626,28 @@ textboxHeight: 0
   </video>
 </div>
 
+<template #reference>
+<Reference reference="Colab: R. Ramesh, Lane Martin (Rice), John Heron (Michigan)" position="bottom" align="left" offset="20px" fontSize='12px' />
+</template>
+
 ---
 layout: default
-titleText: "Full-Frame Plume Dynamics Imaging"
-mainHeight: 75
+mainHeight: 70
 textboxHeight: 0
 ---
 
+# Full-Frame Plume Dynamics Imaging
+
 <CrossfadeImages :images="[
   'plume-dynamics/example-images.png',
-]" />
+]" scale="0.85" style="margin-top: -50px; margin-bottom: -150px"/>
 
-<!-- <div class="h-[80vh] overflow-y-auto overflow-x-hidden p-4">
-  <div class="flex flex-col items-center justify-center gap-4">
-    <img
-      src="/plume-dynamics/2_RSM_Analysis.png"
-      class="max-w-full"
-      id="zoomable-image"
-      style="transform-origin: top center; transition: transform 0.2s;"
-      alt="Example of Plume Dynamics"
-    />
-  </div>
-</div> -->
+<template #reference>
+<Reference reference="Colab: R. Ramesh, Lane Martin (Rice), John Heron (Michigan)" position="bottom" align="left" offset="20px" fontSize='12px' />
+</template>
 
 ---
 layout: ncolumns
-titleText: "Plume Dynamics Metrics"
 columns: 2
 images:
   - plume-dynamics/4-Plume_metrics.png
@@ -663,9 +659,10 @@ titleClicks: [1, 2]
 columnWidths: [1, 1]
 textboxHeight: 0
 mainHeight: 65
-reference: "Colab: R. Ramesh, Lane Martin (Rice), John Heron (Michigan)" 
 roundedEdges: false
 ---
+
+# Plume Dynamics Metrics
 
 <template #col1>
 <div v-click="2" class="text-left gap-4 flex-1">
@@ -675,6 +672,11 @@ roundedEdges: false
     </ul>
   </div>
 </template>
+
+<template #reference>
+<Reference reference="Colab: R. Ramesh, Lane Martin (Rice), John Heron (Michigan)" position="bottom" align="left" offset="20px" fontSize='12px' />
+</template>
+
 
 ---
 layout: default
