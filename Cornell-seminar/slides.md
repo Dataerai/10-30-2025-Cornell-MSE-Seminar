@@ -652,20 +652,19 @@ layout: ncolumns
 columns: 2
 titleText: "Plume Dynamics Metrics"
 images:
-  - plume-dynamics/4-Plume_metrics.png
+  - /plume-dynamics/4-Plume_metrics.png
   - null
 titles:
  - Averaged Plume Metrics
  - null
 titleClicks: [1, 2]
 columnWidths: [1, 1]
-textboxHeight: 20
-mainHeight: 55
+textboxHeight: 0
+mainHeight: 65
 roundedEdges: false
-imageScale: 0.6
-
+imageVerticalOffset: [-100, 30]  # First image 20px from top, second image 30px from top
+imageScale: 0.8
 ---
-
 
 <template #col2>
 <div v-click="2" class="text-left gap-4 flex-1 justify-start">
