@@ -697,3 +697,42 @@ textboxHeight: 10
     <li style="margin-top: -50px">Statistical distribution of the plume dynamics are bimodal, and heavy tailed for first growths</li>
   </template>
 </CrossfadeImages>
+
+---
+layout: default
+mainHeight: 75
+textboxHeight: 0
+reference: "Award: NSF 2320600: MRI: Track 2 Platform for Accessible Data-Intensive Science and Engineering" 
+---
+
+# Scaling Science, One Pod at a Time
+
+<CrossfadeImages :images="[
+  'kubernettes/kubernettes.png',
+]" scale="0.8" style="margin-top: -50px; margin-bottom: -20px"/>
+
+
+---
+layout: default
+titleText: "Kubernettes (K8s): Not a Scheduler, an Orchestrator"
+mainHeight: 75
+textboxHeight: 0
+reference: "Award: NSF 2320600: MRI: Track 2 Platform for Accessible Data-Intensive Science and Engineering" 
+---
+
+#  K8s: Not a Scheduler, an Orchestrator
+
+<CrossfadeImages :images="[
+  'kubernettes/k8-explaination.png',
+]" scale="0.8" style="margin-top: -50px; margin-bottom: -20px"/>
+
+<div style="position: absolute; top: 50%; left: 80%;">
+  <a href="https://nrp.ai/" target="_blank">
+    <img v-click="1" alt="NRP Logo" src="https://nrp.ai/_astro/NRP_Horizontal_Logo.png.DQL8-3kz_19v40c.webp" class="object-cover object-center max-w-[150px] max-h-[27px] aspect-[5.56] w-full" loading="lazy">
+  </a>
+</div>
+
+
+<template #reference>
+<Reference reference="Award: NSF 2320600: MRI: Track 2 Platform for Accessible Data-Intensive Science and Engineering" position="bottom" align="left" offset="20px" fontSize='12px' />
+</template>
