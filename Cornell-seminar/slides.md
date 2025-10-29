@@ -45,6 +45,7 @@ styles:
 
 ---
 layout: default
+showSlideNumber: true
 ---
 
 # Research Philosophy
@@ -186,6 +187,7 @@ layout: default
 
 ---
 layout: default
+showSlideNumber: true
 ---
 
 # Automated Labs
@@ -201,6 +203,7 @@ layout: default
 
 ---
 layout: default
+showSlideNumber: true
 ---
 
 # Ferroelectric Thin Films: Pulsed Laser Deposition
@@ -213,6 +216,7 @@ layout: default
 
 ---
 layout: default
+showSlideNumber: true
 ---
 
 # Ferroelectric Thin Films: Pulsed Laser Deposition
@@ -223,6 +227,7 @@ layout: default
 layout: phrases
 title: "Problem"
 shiftValue: left
+showSlideNumber: true
 ---
 
 ## Materials Science is defined by order, periodicity, and symmetry. Can AI understand this in a meaningful way?
@@ -230,6 +235,7 @@ shiftValue: left
 
 ---
 layout: default
+showSlideNumber: true
 ---
 
 # Order, Periodicity, and Symmetry
@@ -242,6 +248,7 @@ layout: default
 
 ---
 layout: default
+showSlideNumber: true
 ---
 
 # Wallpaper Group Symmetries
@@ -269,6 +276,7 @@ titleClicks: [1, 2, 3]
 columnWidths: [1,1,1]
 textboxHeight: 20
 mainHeight: 60
+showSlideNumber: true
 ---
 
 
@@ -296,6 +304,7 @@ titleClicks: [1, 2, 3]
 columnWidths: [1,1,1]
 textboxHeight: 20
 mainHeight: 60
+showSlideNumber: true
 ---
 
 
@@ -323,6 +332,7 @@ titleClicks: [1, 2, 3]
 columnWidths: [1,1,1]
 textboxHeight: 20
 mainHeight: 60
+showSlideNumber: true
 ---
 
 
@@ -345,6 +355,7 @@ titleClicks: [1]
 columnWidths: [1]
 textboxHeight: 20
 mainHeight: 60
+showSlideNumber: true
 ---
 
 <template #col0-text>
@@ -365,6 +376,7 @@ mainHeight: 60
 layout: default
 mainHeight: 40
 textboxHeight: 25
+showSlideNumber: true
 ---
 
 # JPEG Compression
@@ -382,6 +394,7 @@ textboxHeight: 25
 
 ---
 layout: default
+showSlideNumber: true
 ---
 
 # Physics-Informed Machine Learning
@@ -404,6 +417,7 @@ layout: default
 layout: phrases
 title: "Problem"
 shiftValue: left
+showSlideNumber: true
 ---
 
 ## Neural networks are inherently interpretive. What happens when we need high precision? How do we deal with mathematical decimation of precision?
@@ -425,6 +439,7 @@ mainHeight: 60
 roundedEdges: false
 imageScale: 0.8
 imageVerticalOffset: [-20, -100]
+showSlideNumber: true
 ---
 
 <template #reference>
@@ -433,6 +448,7 @@ imageVerticalOffset: [-20, -100]
 
 ---
 layout: default
+showSlideNumber: true
 ---
 
 # 4D-STEM: Strain Mapping
@@ -453,6 +469,7 @@ titleText: "4D-STEM: Strain Mapping"
 mainHeight: 70
 textboxHeight: 0
 reference: "Colab: David Muller, Colin Ophus, Yimo Han, and others" 
+showSlideNumber: true
 ---
 
 # 4D-STEM: Strain Mapping
@@ -465,6 +482,7 @@ reference: "Colab: David Muller, Colin Ophus, Yimo Han, and others"
 
 ---
 layout: default
+showSlideNumber: true
 ---
 
 # 4D-STEM: Strain Mapping
@@ -479,6 +497,7 @@ layout: default
 
 ---
 layout: default
+showSlideNumber: true
 ---
 
 # Improved Robustness to Background Noise
@@ -501,6 +520,7 @@ mainHeight: 90
 roundedEdges: false
 imageScale: 0.6
 imageVerticalOffset: [-100, -100]
+showSlideNumber: true
 ---
 
 
@@ -520,12 +540,14 @@ imageVerticalOffset: [-100, -100]
 layout: phrases
 title: "Problem"
 shiftValue: left
+showSlideNumber: true
 ---
 
 ## Automated labs rely on preplanned trajectories and protocols. Think of trying to drive a race car with preprogrammed steering angles, throttle, and brake pedal positions -- you would almost certainly crash. Science needs control of dynamical processes at relevant time scales.
 
 ---
 layout: default
+showSlideNumber: true
 ---
 
 # Ferroelectric Thin Films: Pulsed Laser Deposition
@@ -544,6 +566,7 @@ layout: default
 dragPos:
   image1: 680,95,165,400
   image2: 192,96,356,384
+showSlideNumber: true
 ---
 
 # High-Speed RHEED
@@ -558,6 +581,7 @@ dragPos:
 layout: default
 mainHeight: 75
 textboxHeight: 0
+showSlideNumber: true
 ---
 
 # RHEED High-Speed (>500 Hz)
@@ -576,6 +600,7 @@ layout: default
 titleText: "To Sand or Not to Sand, That is the Question"
 mainHeight: 75
 textboxHeight: 0
+showSlideNumber: true
 ---
 
 # To Sand or Not to Sand, That is the Question
@@ -602,6 +627,7 @@ mainHeight: 70
 roundedEdges: false
 imageScale: 0.8
 imageVerticalOffset: [-10, -10]
+showSlideNumber: true
 ---
 
 <template #reference>
@@ -612,6 +638,7 @@ imageVerticalOffset: [-10, -10]
 layout: default
 mainHeight: 75
 textboxHeight: 0
+showSlideNumber: true
 ---
 
 # Full-Frame Plume Dynamics Imaging
@@ -630,6 +657,7 @@ textboxHeight: 0
 layout: default
 mainHeight: 70
 textboxHeight: 0
+showSlideNumber: true
 ---
 
 # Full-Frame Plume Dynamics Imaging
@@ -660,6 +688,7 @@ mainHeight: 65
 roundedEdges: false
 imageVerticalOffset: [-100, 30]  # First image 20px from top, second image 30px from top
 imageScale: 0.8
+showSlideNumber: true
 ---
 
 <template #col2>
@@ -681,6 +710,7 @@ layout: default
 titleText: "Statistical Analysis of Plume Dynamics"
 mainHeight: 55
 textboxHeight: 10
+showSlideNumber: true
 ---
 
 # Statistical Analysis of Plume Dynamics
@@ -699,6 +729,7 @@ layout: default
 mainHeight: 75
 textboxHeight: 0
 reference: "Award: NSF 2320600: MRI: Track 2 Platform for Accessible Data-Intensive Science and Engineering" 
+showSlideNumber: true
 ---
 
 # Scaling Science, One Pod at a Time
@@ -714,6 +745,7 @@ titleText: "Kubernettes (K8s): Not a Scheduler, an Orchestrator"
 mainHeight: 75
 textboxHeight: 0
 reference: "Award: NSF 2320600: MRI: Track 2 Platform for Accessible Data-Intensive Science and Engineering" 
+showSlideNumber: true
 ---
 
 #  K8s: Not a Scheduler, an Orchestrator
@@ -736,6 +768,7 @@ layout: default
 titleText: "Timing is Everything"
 mainHeight: 80
 textboxHeight: 0
+showSlideNumber: true
 ---
 
 # Timing is Everything
@@ -749,6 +782,7 @@ textboxHeight: 0
 layout: default
 mainHeight: 75
 textboxHeight: 0
+showSlideNumber: true
 --- 
 
 # Compact Muon Solenoid at the Large Hadron Collider
@@ -767,6 +801,7 @@ layout: default
 titleText: "HLS4ML : Real-Time ML on FPGAs"
 mainHeight: 55
 textboxHeight: 0
+showSlideNumber: true
 ---
 
 # HLS4ML : Real-Time ML on FPGAs
@@ -790,6 +825,7 @@ textboxHeight: 0
 layout: default
 mainHeight: 55
 textboxHeight: 20
+showSlideNumber: true
 ---
 
 # From Static to Dynamic Control
@@ -809,6 +845,7 @@ textboxHeight: 20
 layout: default
 mainHeight: 40
 textboxHeight: 0
+showSlideNumber: true
 ---
 
 # From Static to Dynamic Control
@@ -828,6 +865,7 @@ textboxHeight: 0
 layout: default
 mainHeight: 55
 textboxHeight: 0
+showSlideNumber: true
 ---
 
 # Experimental Setup
@@ -870,6 +908,7 @@ columnWidths: [1, 1]
 textboxHeight: 0
 mainHeight: 70
 roundedEdges: false
+showSlideNumber: true
 ---
 
 <template #col2>
@@ -894,6 +933,7 @@ layout: default
 titleText: "FPGA Block Diagram"
 mainHeight: 60
 textboxHeight: 0
+showSlideNumber: true
 ---
 
 # FPGA Codesign Optimization
@@ -912,6 +952,7 @@ layout: main-custom-layout
 titleText: "Neural Architecture Search for FastML on FPGAs"
 mainHeight: 70
 textboxHeight: 0
+showSlideNumber: true
 ---
 
 <CrossfadeImages :images="[
@@ -931,6 +972,7 @@ textboxHeight: 0
 mainHeight: 55
 reference: "Colab: Jane Greenberg (Drexel University)"
 roundedEdges: false
+showSlideNumber: true
 ---
 
 ::col1::
@@ -953,6 +995,7 @@ titleText: "Future Activities: Dose Control in Electron Microscopy"
 mainHeight: 70
 reference: "Colab: Seda Ogrenci (Northwestern), David Flannigan (Minnesota)"
 textboxHeight: 0
+showSlideNumber: true
 ---
 
 <CrossfadeImages :images="[
@@ -964,6 +1007,7 @@ layout: main-custom-layout
 titleText: "Acknowledgements"
 mainHeight: 83
 textboxHeight: 0
+showSlideNumber: true
 ---
 
 <CrossfadeImages :images="[
@@ -975,6 +1019,7 @@ layout: main-custom-layout
 titleText: "Source Materials"
 mainHeight: 83
 textboxHeight: 0
+showSlideNumber: true
 ---
 
 <QrGrid :items="[
