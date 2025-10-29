@@ -959,6 +959,219 @@ showSlideNumber: true
 
 <Reference reference="Colab: Seda Ogrenci (Northwestern), David Flannigan (Minnesota)" position="bottom" align="left" offset="0px" fontSize='10px' />
 
+---
+layout: phrases
+title: "Problem"
+shiftValue: left
+---
+
+
+<!-- ## Scientific datasets remain siloed, poorly indexed, and trapped in single-use cycles, most never released. While publicly-funded institutions **must** share their data, existing services fail and funding models burden institutions. -->
+
+<!-- ## Scientific datasets are siloed. Each institution approaches their open data commitments in a different way, creating inconsistent results and slowing down research. -->
+
+## Most valuable data goes underused because preparing data for general use is time consuming and offers unclear ROI.
+
+---
+layout: phrases
+title: "Solution"
+shiftValue: left
+---
+
+<!-- ## We make compliance grant-funded and automatic while preparing data for AI, ensuring every research dollar delivers maximum impact. -->
+
+## Our platform automates data asset creation and provides a marketplace to assemble them into AI-ready datasets.
+
+---
+layout: default
+---
+
+<BigQuote
+  quote="Federal data is a valuable national resource and a strategic asset. Expanding access and
+usability of Federal data [...] can have a positive effect on the Federal Government and the public. Public access to
+open Government data assets [...] promote innovation and
+collaboration with the private sector and academia [...]."
+  author="Office of Management and Budget"
+  title="M-25-05: Open Government Data Access and Management Guidance (Jan. 2025)"
+  fontSize="2.2"
+  footerFontSize="1"
+  style="margin-top: 5px; margin-bottom: 5px;"
+/>
+
+---
+layout: default
+title: "Data AI Workflow"
+---
+
+# Dataerai Scientific Data Management and Sharing
+
+<div style="transform-origin: left top; margin-bottom:5%; scale: 0.90; width: 100%; display: inline-block;">
+
+```mermaid
+%%{init: {'theme':'base', 'themeVariables': { 'primaryColor':'transparent','primaryTextColor':'#954C9D','primaryBorderColor':'transparent','lineColor':'#666','secondaryColor':'transparent','tertiaryColor':'transparent','background':'transparent','mainBkg':'transparent','secondaryBkg':'transparent','tertiaryBkg':'transparent','fontSize':'32px','fontFamily':'Helvetica-Neue, Arial, sans-serif', 'arrowheadScale': 10, 'clusterBorder':'#954C9D', 'clusterPadding':'2px'}}}%%
+graph LR
+
+    subgraph DataGeneration["<span style='color:#954C9D'> >1000x </span>"]
+        direction LR
+        Scientist["<img src='/product-images/scientist.svg' width='150' height='150' style='vertical-align: middle;'/><br/><span style='position: relative; top: -35px;'>Scientist</span>"] 
+        Microscope["<img src='/product-images/microscope.svg' width='150' height='150' style='vertical-align: middle;'/><br/><span style='position: relative; top: -35px;'>Microscope</span>"]
+        Automatic-Data-Curator["<img src='/product-images/business-ai-tech.svg' width='150' height='150' style='vertical-align: middle;'/><br/><span style='position: relative; top: -35px;'>Automatic <br> Data <br> Curator</span>"]
+    end
+    Industry["<img src='/product-images/industry.svg' width='150' height='150' style='vertical-align: middle;'/><br/><span style='position: relative; top: -35px;'>Industry</span>"]
+    Academia["<img src='/product-images/university.svg' width='150' height='150' style='vertical-align: middle;'/><br/><span style='position: relative; top: -35px;'>Academia</span>"]
+    attribution["<img src='/product-images/medal-with-ribbon.svg' width='150' height='150' style='vertical-align: middle;'/><br/><span style='position: relative; top: -35px;'>Attribution</span>"]
+    hacker["<img src='/product-images/hacker.svg' width='150' height='150' style='vertical-align: middle;'/><br/><span style='position: relative; top: -35px;'>Data Liability<br/>Mitigation</span>"]
+    Data-Repo["<img src='/product-images/data.svg' width='150' height='150' style='vertical-align: middle;'/><br/><span style='position: relative; top: -35px;'>Data Store</span>"]
+    Metadata["<img src='/product-images/database-analyzing.svg' width='150' height='150' style='vertical-align: middle;'/><br/><span style='position: relative; top: -35px;'>Metadata <br> Database</span>"]
+    cloud-backup["<img src='/product-images/cloud-server-operator.svg' width='150' height='150' style='vertical-align: middle;'/><br/><span style='position: relative; top: -35px;'>Cloud Data <br> Backup</span>"]
+    AI["<img src='/product-images/robot-cluster.svg' width='150' height='150' style='vertical-align: middle;'/><br/><span style='position: relative; top: -35px;'>AI Collective <br> Intelligence</span>"]
+
+    
+    Scientist --> Microscope
+    Scientist  --> attribution
+
+   
+    Microscope --> Automatic-Data-Curator
+    Automatic-Data-Curator-->Data-Repo
+    Automatic-Data-Curator-->Metadata
+    Metadata <--> Industry
+    Metadata <--> Academia
+    Data-Repo <--> Industry
+    Data-Repo <--> Academia
+    Academia --> hacker
+    Data-Repo --> cloud-backup
+    Industry --> AI
+    Academia --> AI
+
+    
+
+    classDef transparent fill:transparent,stroke:transparent
+    classDef thickBorder stroke:#954C9D,stroke-width:6px,padding:5px
+    class Scientist,Microscope,Industry,Academia,attribution,hacker,Data-Repo,Metadata,cloud-backup,AI,Automatic-Data-Curator transparent
+    class DataGeneration thickBorder
+    linkStyle default stroke:#954C9D,stroke-width:4px
+```
+</div>
+
+---
+layout: default
+---
+
+# Competitive Landscape
+
+<competitivelandscape
+:scale=".95"
+max-width="90vw"
+max-height="75vh"
+:columns="[
+ { key: 'DataCurator', label: 'Data Curator', type: 'boolean', width: '80px' },
+ { key: 'Sharing', label: 'Controlled Sharing', type: 'boolean', width: '80px' },
+ { key: 'FileSize', label: 'File Size Limit', type: 'text', width: '80px' },
+ { key: 'TransferSpeed', label: 'Transfer Speed', type: 'text', width: '80px' },
+ { key: 'Search', label: 'Searchable Database', type: 'boolean', width: '80px' },
+ { key: 'BackupRetention', label: 'Backup & Retention', type: 'boolean', width: '80px' },
+ { key: 'DirectCost', label: 'Direct Cost Pricing', type: 'boolean', width: '80px' },
+ { key: 'Enterprise', label: 'Enterprise Solution', type: 'boolean', width: '80px' },
+ {key:'DataMarketplace', label: 'Data Marketplace', type: 'boolean', width: '80px' }
+]"
+:companies="[
+  {
+    name: 'Dataerai',
+    logoLight: '/square-logo-black.svg',
+    logoDark: '/square-logo-white.svg',
+    DataCurator: true,
+    Sharing: true,
+    FileSize: '5 TB',
+    TransferSpeed: '>15 Gb/s',
+    Search: true,
+    BackupRetention: true,
+    DirectCost: true,
+    Enterprise: true,
+    DataMarketplace: true
+ },
+ {
+   name: 'Google Drive',
+   domain: 'drive.google.com',
+   DataCurator: false,
+   Sharing: false,
+   FileSize: '5 TB',
+   TransferSpeed: '45 MB/s',
+   Search: false,
+   BackupRetention: false,
+   DirectCost: false,
+   Enterprise: true,
+   DataMarketplace: false
+ },
+ {
+   name: 'Zenodo',
+   domain: 'zenodo.org',
+   DataCurator: false,
+   Sharing: false,
+   FileSize: '200 GB',
+   TransferSpeed: '< 20 MB/s',
+   Search: true,
+   BackupRetention: true,
+   DirectCost: true,
+   Enterprise: false,
+   DataMarketplace: false
+ },
+ {
+   name: 'Lab Archives',
+   domain: 'labarchives.com',
+   DataCurator: false,
+   Sharing: true,
+   FileSize: '<16 GB',
+   TransferSpeed: '< 20 MB/s',
+   Search: false,
+   BackupRetention: false,
+   DirectCost: false,
+   Enterprise: true,
+   DataMarketplace: false
+ },
+ {
+   name: 'Figshare',
+   domain: 'figshare.com',
+   DataCurator: false,
+   Sharing: true,
+   FileSize: '5 TB',
+   TransferSpeed: '100 Mbps',
+   Search: false,
+   BackupRetention: true,
+   DirectCost: true,
+   Enterprise: true,
+   DataMarketplace: false
+ },
+ {
+   name: 'IRODS',
+   domain: 'irods.org',
+   DataCurator: false,
+   Sharing: true,
+   FileSize: 'No Backend',
+   TransferSpeed: 'No Backend',
+   Search: true,
+   BackupRetention: false,
+   DirectCost: false,
+   Enterprise: false,
+   DataMarketplace: false
+ },
+ {
+   name: 'TetraScience',
+   domain: 'tetrascience.com',
+   DataCurator: true,
+   Sharing: false,
+   FileSize: '5 TB',
+   TransferSpeed: 'Unknown',
+   Search: true,
+   BackupRetention: false,
+   DirectCost: false,
+   Enterprise: true,
+   DataMarketplace: true
+ }
+]"
+primaryColor="#667eea"
+secondaryColor="#764ba2"
+/>
+
 
 ---
 layout: ncolumns
@@ -997,10 +1210,6 @@ showSlideNumber: true
 ::text::
 <span v-click="3" style="display: block; margin-bottom: 10px;">- Pip installable python package `pip install datafed_torchflow`</span>
 <span v-click="3" style="display: block; margin-bottom: 10px;">- With a single instantiation provides a drag-and-drop replacement for `model.save()` in PyTorch</span>
-
-
-
-
 
 ---
 layout: default
