@@ -428,37 +428,13 @@ layout: default
 showSlideNumber: true
 dragPos:
   image2: 58,98,355,386
-  image1: 448,122,498,329
+  image1: 0,-5,0,0
 ---
 
 # 4D-STEM: Strain Mapping
 
 <img v-drag="'image2'" src="/stem4d/4d-stem.png">
 <img v-click v-drag="'image1'" src="/stem4d/strain-shear-rotation.png">
-
----
-layout: ncolumns
-titleText: "4D-STEM: Strain Mapping"
-columns: 2
-images:
-  - stem4d/4d-stem.png
-  - stem4d/strain-shear-rotation.png
-titles:
-  - null
-  - null
-titleClicks: [1, 2]
-columnWidths: [1.5, 2]
-textboxHeight: 0
-mainHeight: 60
-roundedEdges: false
-imageScale: 0.8
-imageVerticalOffset: [-20, -100]
-showSlideNumber: true
----
-
-<template #reference>
-<Reference reference="Colab: David Muller, Colin Ophus, Yimo Han, and others" position="bottom" align="left" offset="20px" fontSize='12px' />
-</template>
 
 ---
 layout: default
