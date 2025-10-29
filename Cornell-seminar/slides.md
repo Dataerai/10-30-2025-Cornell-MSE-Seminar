@@ -905,3 +905,86 @@ textboxHeight: 0
 - How do you efficiently achieve a good tradeoff between latency (power), and accuracy?
 
 <Reference reference="Collab: Nhan Tran (FermiLabs), Giuseppe Di Guglielmo, Michael E Mauel, Gerald A Navratil (Columbia)" position="bottom" align="left" offset="0px" fontSize='8px' />
+
+
+---
+layout: main-custom-layout
+titleText: "Neural Architecture Search for FastML on FPGAs"
+mainHeight: 70
+textboxHeight: 0
+---
+
+<CrossfadeImages :images="[
+  'fastml/FastML-NAS.png',
+]"/>
+
+---
+layout: ncolumns
+titleText: "DataFed TorchFlow"
+columns: 2
+images:
+  - fastml/torchlogger/datafedTorchflow.png
+  - null
+titleClicks: [1, 2]
+columnWidths: [1, 1]
+textboxHeight: 0
+mainHeight: 55
+reference: "Colab: Jane Greenberg (Drexel University)"
+roundedEdges: false
+---
+
+::col1::
+## What Does DataFed TorchFlow Do?
+
+- Preserves script with a checksum.
+- Maintains a copy or reference to the training data.
+- Extracts the neural network model graph.
+- Extracts the optimizer state and hyperparameters.
+- Records the Python and hardware environment.
+- Allows the addition of any custom metadata.
+
+::text::
+- <span v-click="3">Pip installable python package `pip install datafed_torchflow`</span>
+- <span v-click="3">With a single instantiation provides a drag-and-drop replacement for `model.save()` in PyTorch</span>
+
+---
+layout: main-custom-layout
+titleText: "Future Activities: Dose Control in Electron Microscopy"
+mainHeight: 70
+reference: "Colab: Seda Ogrenci (Northwestern), David Flannigan (Minnesota)"
+textboxHeight: 0
+---
+
+<CrossfadeImages :images="[
+  'fastml/EM.png',
+]"/>
+
+---
+layout: main-custom-layout
+titleText: "Acknowledgements"
+mainHeight: 83
+textboxHeight: 0
+---
+
+<CrossfadeImages :images="[
+  'people.png',
+]"/>
+
+---
+layout: main-custom-layout
+titleText: "Source Materials"
+mainHeight: 83
+textboxHeight: 0
+---
+
+<QrGrid :items="[
+  { title: 'Slides', url: 'https://m3-learning.github.io/Brookhaven-national-lab-8-18-2025/1' },
+  { title: 'DataFed', url: 'https://datafed.ornl.gov/ui/welcome' },
+  { title: 'Learning Symmetries', url: 'https://github.com/yig319/Understanding-Experimental-Images-by-Identifying-Symmetries-with-Deep-Learning' },
+  { title: 'RHEED Analysis', url: 'https://github.com/m3-learning/Predicting-Pulsed-Laser-Deposition-SrTiO3-Homoepitaxy-Growth-Dynamics-using-RHEED'},
+  { title: 'Plume Dynamics', url: 'https://github.com/m3-learning/SrRuO3_Plume_Dynamics'},
+  { title: 'Auto4DSTEM', url: 'https://github.com/m3-learning/Auto4DSTEM'},
+  { title: 'Embedding Visualizer', url: 'https://github.com/chirayupatel9/embedding-be-lmdb'},
+  { title: 'HLS4ML', url: 'https://fastmachinelearning.org/hls4ml/'},
+  { title: 'FastML Tutorial Medium', url: 'https://medium.com/@forelliryan/deploying-neural-networks-for-in-situ-inference-on-frame-grabber-fpgas-in-high-speed-imaging-6201557fdabc'},
+]" :columns="5" />
