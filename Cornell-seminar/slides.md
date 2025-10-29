@@ -1020,15 +1020,16 @@ showSlideNumber: true
 
 ---
 layout: default
-titleText: "Acknowledgements"
 mainHeight: 83
 textboxHeight: 0
 showSlideNumber: true
 ---
 
+# The People Behind the Research
+
 <CrossfadeImages :images="[
   'people.png',
-]"/>
+]" scale="0.85" style="margin-top: -50px; margin-bottom: -20px"/>
 
 ---
 layout: default
