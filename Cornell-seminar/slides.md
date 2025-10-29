@@ -581,9 +581,9 @@ textboxHeight: 0
 # To Sand or Not to Sand, That is the Question
 
 <CrossfadeImages :images="[
-  'plume-dynamics/plume-dynamics.png',
+  'plume-dynamics/plume-dynamics.png'
 ]" 
-scale="0.85" style="margin-top: -50px; margin-bottom: -150px" />
+:scale="0.85" style="margin-top: -50px; margin-bottom: -150px" />
 
 ---
 layout: ncolumns
@@ -600,13 +600,9 @@ columnWidths: [1, 1]
 textboxHeight: 30
 mainHeight: 70
 roundedEdges: false
+imageScale: 0.8
+imageVerticalOffset: [-10, -10]
 ---
-
-
-<CrossfadeImages :images="[
-  'plume-dynamics/surface-topography.svg',
-  'plume-dynamics/2_RSM_Analysis.png'
-]" scale="0.9"/>
 
 <template #reference>
 <Reference reference="Colab: R. Ramesh, Lane Martin (Rice), John Heron (Michigan)" position="bottom" align="left" offset="20px" fontSize='12px' />
@@ -733,7 +729,7 @@ reference: "Award: NSF 2320600: MRI: Track 2 Platform for Accessible Data-Intens
 </div>
 
 
-<Reference reference="Award: NSF 2320600: MRI: Track 2 Platform for Accessible Data-Intensive Science and Engineering" position="bottom" align="left" offset="20px" fontSize='12px' />
+<Reference reference="Platform for Accessible Data-Intensive Science and Engineering" position="bottom" align="left" offset="20px" fontSize='12px' />
 
 ---
 layout: default
@@ -807,43 +803,42 @@ textboxHeight: 20
   </template>
 </CrossfadeImages>
 
-<Reference reference="NSF 2320600: Platform for Accessible Data-Intensive Science and Eng." position="bottom" align="left" offset="20px" fontSize='12px' />
+
 
 ---
 layout: default
-titleText: "From Static to Dynamic Control"
 mainHeight: 40
 textboxHeight: 0
-reference: "Collab: Nhan Tran (FermiLabs), Giuseppe Di Guglielmo, Michael E Mauel, Gerald A Navratil (Columbia)"
 ---
+
+# From Static to Dynamic Control
 
 <CrossfadeImages :images="[
   'fastml/plasma/GPU-version.png',
-]"/>
+]" scale="0.9" style="margin-top: -70px; margin-bottom: -80px"/>
 
-<!-- Use two newlines to force a paragraph block -->
-  
-::text::
 - Inference latency too high ($\mathcal{O}$(100 $\mu$s))
 - Non-deterministic inference latency
 - At least two PCIe hops ($\mathcal{O}$(1ms)) 
 - Low power efficiency for remote inference
 
+<Reference reference="Collab: Nhan Tran (FermiLabs), Giuseppe Di Guglielmo, Michael E Mauel, Gerald A Navratil (Columbia)" position="bottom" align="left" offset="0px" fontSize='8px' />
+
 ---
 layout: default
-titleText: "Experimental Setup"
 mainHeight: 55
 textboxHeight: 0
-reference: "Collab: Nhan Tran (FermiLabs), Giuseppe Di Guglielmo, Michael E Mauel, Gerald A Navratil (Columbia)"
 ---
+
+# Experimental Setup
 
 <CrossfadeImages :images="[
   'fastml/plasma/camera-setup.png',
-]"/>
+]" scale="0.7" style="margin-top: -70px; margin-bottom: -50px"/>
 
-::text::
 - Two Phantom Vision cameras capable of 100,000 fps
 - Direct optical imaging of tokamak plasma
+<Reference reference="Collab: Nhan Tran (FermiLabs), Giuseppe Di Guglielmo, Michael E Mauel, Gerald A Navratil (Columbia)" position="bottom" align="left" offset="0px" fontSize='8px' />
 
 ---
 layout: default
@@ -853,12 +848,15 @@ textboxHeight: 0
 reference: "Collab: Nhan Tran (FermiLabs), Giuseppe Di Guglielmo, Michael E Mauel, Gerald A Navratil (Columbia)"
 ---
 
+# FPGA Block Diagram
+
 <CrossfadeImages :images="[
   'fastml/plasma/camera-setup-2.png',
-]"/>
+]" scale="0.7" style="margin-top: -70px; margin-bottom: -50px"/>
 
-::text::
 - Data is aquired over CoaXPress --> Custom Logic ML Inference --> FPGA --> Control Signals
+
+<Reference reference="Collab: Nhan Tran (FermiLabs), Giuseppe Di Guglielmo, Michael E Mauel, Gerald A Navratil (Columbia)" position="bottom" align="left" offset="0px" fontSize='8px' />
 
 ---
 layout: ncolumns
@@ -871,17 +869,25 @@ titleClicks: [1, 2]
 columnWidths: [1, 1]
 textboxHeight: 0
 mainHeight: 70
-reference: "Collab: Nhan Tran (FermiLabs), Giuseppe Di Guglielmo, Michael E Mauel, Gerald A Navratil (Columbia)"
 roundedEdges: false
 ---
 
-::col1::
-1. 0.3 ns single CPU clock cycle
-2. 0.1-0.2 μs reading 1 MB block from RAM 
-3. 0.1-0.5 μs PCIe hop
-4. 100 μs – 1 ms reading 1 MB block from NVMe
-5. 0.1 ms – 1 ms local network ping
-6. 10 ms – 20 ms reading 1 MB block from spinning disk 
+<template #col2>
+<div v-click="2" class="text-left gap-4 flex-1 justify-start">
+    <ul class="list-disc pl-4">
+      <li>1. 0.3 ns single CPU clock cycle</li>
+      <li>2. 0.1-0.2 μs reading 1 MB block from RAM </li>
+      <li>3. 0.1-0.5 μs PCIe hop</li>
+      <li>4. 100 μs – 1 ms reading 1 MB block from NVMe</li>
+      <li>5. 0.1 ms – 1 ms local network ping</li>
+      <li>6. 10 ms – 20 ms reading 1 MB block from spinning disk </li>
+    </ul>
+  </div>
+</template>
+
+<template #reference>
+<Reference reference="Collab: Nhan Tran (FermiLabs), Giuseppe Di Guglielmo, Michael E Mauel, Gerald A Navratil (Columbia)" position="bottom" align="left" offset="0px" fontSize='8px' />
+</template>
 
 ---
 layout: default
@@ -890,9 +896,12 @@ mainHeight: 60
 textboxHeight: 0
 ---
 
+# FPGA Codesign Optimization
+
 <CrossfadeImages :images="[
   'fastml/plasma/pareto.svg',
-]"/>
+]" scale="0.7" style="margin-top: -70px; margin-bottom: -50px"/>
 
-::text::
 - How do you efficiently achieve a good tradeoff between latency (power), and accuracy?
+
+<Reference reference="Collab: Nhan Tran (FermiLabs), Giuseppe Di Guglielmo, Michael E Mauel, Gerald A Navratil (Columbia)" position="bottom" align="left" offset="0px" fontSize='8px' />
