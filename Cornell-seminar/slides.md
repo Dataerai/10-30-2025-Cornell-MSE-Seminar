@@ -436,6 +436,7 @@ dragPos:
 <img v-drag="'image2'" src="/stem4d/4d-stem.png">
 <img v-click v-drag="'image1'" src="/stem4d/strain-shear-rotation.png">
 
+
 ---
 layout: default
 showSlideNumber: true
@@ -495,6 +496,21 @@ showSlideNumber: true
 <iframe src="stem4d/mae_vs_bkg_noise_plot_enhanced.html" width="100%" height="400px" style="margin: 0;"></iframe>
 
 <Reference reference="Colab: David Muller, Colin Ophus, Yimo Han, and others" position="bottom" align="left" offset="20px" fontSize='12px' />
+
+---
+layout: default
+showSlideNumber: true
+dragPos:
+  image2: 106,98,295,389
+  image1: 414,116,538,355
+---
+
+# 4D-STEM: Strain Mapping
+
+<img v-drag="'image2'" src="/stem4d/experiment/figure-4-1.png">
+
+
+<img v-click v-drag="'image1'" src="/stem4d/strain-shear-rotation.png">
 
 ---
 layout: ncolumns
