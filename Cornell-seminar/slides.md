@@ -948,12 +948,14 @@ showSlideNumber: true
 
 
 ---
-layout: main-custom-layout
+layout: default
 titleText: "Neural Architecture Search for FastML on FPGAs"
 mainHeight: 70
 textboxHeight: 0
 showSlideNumber: true
 ---
+
+# Neural Architecture Search for FastML on FPGAs
 
 <CrossfadeImages :images="[
   'fastml/FastML-NAS.png',
@@ -968,29 +970,39 @@ images:
   - null
 titleClicks: [1, 2]
 columnWidths: [1, 1]
-textboxHeight: 0
+textboxHeight: 10
 mainHeight: 55
-reference: "Colab: Jane Greenberg (Drexel University)"
 roundedEdges: false
 showSlideNumber: true
 ---
 
-::col1::
-## What Does DataFed TorchFlow Do?
+<template #col2>
+<div v-click="2" class="text-left gap-4 flex-1 justify-start">
+<h2>What Does DataFed TorchFlow Do?</h2>
+    <ul class="list-disc pl-4">
+      <li>Preserves script with a checksum.</li>
+      <li>Preserves script with a checksum.</li>
+      <li>Maintains a copy or reference to the training data.</li>
+      <li>Extracts the neural network model graph.</li>
+      <li>Extracts the optimizer state and hyperparameters.</li>
+      <li>Records the Python and hardware environment. </li>
+      <li>Allows the addition of any custom metadata. </li>
+    </ul>
+  </div>
+</template>
 
-- Preserves script with a checksum.
-- Maintains a copy or reference to the training data.
-- Extracts the neural network model graph.
-- Extracts the optimizer state and hyperparameters.
-- Records the Python and hardware environment.
-- Allows the addition of any custom metadata.
+<template #reference>
+  <Reference reference="Colab: Jane Greenberg (Drexel University)" position="bottom" align="left" offset="0px" fontSize='10px' />
+</template>
 
 ::text::
-- <span v-click="3">Pip installable python package `pip install datafed_torchflow`</span>
-- <span v-click="3">With a single instantiation provides a drag-and-drop replacement for `model.save()` in PyTorch</span>
+<span v-click="3" style="display: block; margin-bottom: 10px;">- Pip installable python package `pip install datafed_torchflow`</span>
+<span v-click="3" style="display: block; margin-bottom: 10px;">- With a single instantiation provides a drag-and-drop replacement for `model.save()` in PyTorch</span>
+
+
 
 ---
-layout: main-custom-layout
+layout: default
 titleText: "Future Activities: Dose Control in Electron Microscopy"
 mainHeight: 70
 reference: "Colab: Seda Ogrenci (Northwestern), David Flannigan (Minnesota)"
@@ -1003,7 +1015,7 @@ showSlideNumber: true
 ]"/>
 
 ---
-layout: main-custom-layout
+layout: default
 titleText: "Acknowledgements"
 mainHeight: 83
 textboxHeight: 0
@@ -1015,7 +1027,7 @@ showSlideNumber: true
 ]"/>
 
 ---
-layout: main-custom-layout
+layout: default
 titleText: "Source Materials"
 mainHeight: 83
 textboxHeight: 0
