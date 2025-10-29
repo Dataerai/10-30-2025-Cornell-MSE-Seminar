@@ -503,7 +503,7 @@ showSlideNumber: true
 dragPos:
   image2: 172,104,236,311
   image1: 414,90,399,347
-  text: 35,451,924,42
+  text: 0,-5,0,0
 ---
 
 # 4D-STEM: Strain Mapping Experimental Results
@@ -519,36 +519,6 @@ dragPos:
 </div>
 
 <Reference reference="Colab: David Muller, Colin Ophus, Yimo Han, and others" position="bottom" align="left" offset="20px" fontSize='12px' />
-
----
-layout: ncolumns
-titleText: "4D-STEM: Strain Mapping Experimental Results"
-columns: 2
-images:
-  - stem4d/experiment/figure-4-1.png
-  - stem4d/experiment/figure-4-2.png
-titleClicks: [1,2]
-columnWidths: [1.5, 2]
-textboxHeight: 10
-mainHeight: 90
-roundedEdges: false
-imageScale: 0.6
-imageVerticalOffset: [-100, -100]
-showSlideNumber: true
----
-
-
-<template #text>
-<div v-click="2" class="text-left">
-<ul class="list-disc">
-  <li>The experimental results demonstrate the strain mapping capabilities of 4D-STEM, showing both the spatial distribution and magnitude of strain fields in the sample.</li>
-</ul>
-</div>
-</template>
-
-<template #reference>
-<Reference reference="Colab: David Muller, Colin Ophus, Yimo Han, and others" position="bottom" align="left" offset="20px" fontSize='12px' />
-</template>
 
 --- 
 layout: phrases
