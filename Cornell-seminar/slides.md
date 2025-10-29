@@ -962,6 +962,21 @@ showSlideNumber: true
 ]"/>
 
 ---
+layout: default
+mainHeight: 70
+textboxHeight: 0
+showSlideNumber: true
+---
+
+# Dose Control in Electron Microscopy
+<CrossfadeImages :images="[
+  'fastml/EM.png',
+]" scale="0.8" style="margin-top: -50px; margin-bottom: -20px"/>
+
+<Reference reference="Colab: Seda Ogrenci (Northwestern), David Flannigan (Minnesota)" position="bottom" align="left" offset="0px" fontSize='10px' />
+
+
+---
 layout: ncolumns
 titleText: "DataFed TorchFlow"
 columns: 2
@@ -1001,18 +1016,7 @@ showSlideNumber: true
 
 
 
----
-layout: default
-titleText: "Future Activities: Dose Control in Electron Microscopy"
-mainHeight: 70
-reference: "Colab: Seda Ogrenci (Northwestern), David Flannigan (Minnesota)"
-textboxHeight: 0
-showSlideNumber: true
----
 
-<CrossfadeImages :images="[
-  'fastml/EM.png',
-]"/>
 
 ---
 layout: default
