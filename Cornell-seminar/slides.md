@@ -501,16 +501,24 @@ showSlideNumber: true
 layout: default
 showSlideNumber: true
 dragPos:
-  image2: 106,98,295,389
-  image1: 414,116,538,355
+  image2: 172,104,236,311
+  image1: 414,90,399,347
+  text: 35,451,924,42
 ---
 
-# 4D-STEM: Strain Mapping
+# 4D-STEM: Strain Mapping Experimental Results
 
 <img v-drag="'image2'" src="/stem4d/experiment/figure-4-1.png">
 
+<img v-click v-drag="'image1'" src="/stem4d/experiment/figure-4-2.png">
 
-<img v-click v-drag="'image1'" src="/stem4d/strain-shear-rotation.png">
+<div v-drag="'text'" v-click="2" class="text-left">
+<ul class="list-disc">
+  <li>The experimental results demonstrate the strain mapping capabilities of 4D-STEM, showing both the spatial distribution and magnitude of strain fields in the sample.</li>
+</ul>
+</div>
+
+<Reference reference="Colab: David Muller, Colin Ophus, Yimo Han, and others" position="bottom" align="left" offset="20px" fontSize='12px' />
 
 ---
 layout: ncolumns
