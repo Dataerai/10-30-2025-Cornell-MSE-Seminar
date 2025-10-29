@@ -365,7 +365,6 @@ mainHeight: 60
 layout: default
 mainHeight: 40
 textboxHeight: 25
-reference: 
 ---
 
 # JPEG Compression
@@ -424,6 +423,8 @@ columnWidths: [1.5, 2]
 textboxHeight: 0
 mainHeight: 60
 roundedEdges: false
+imageScale: 0.8
+imageVerticalOffset: [-20, -100]
 ---
 
 <template #reference>
@@ -491,13 +492,15 @@ layout: ncolumns
 titleText: "4D-STEM: Strain Mapping Experimental Results"
 columns: 2
 images:
-  - stem4d/experiment/figure-4-1.svg
-  - stem4d/experiment/figure-4-2.svg
+  - stem4d/experiment/figure-4-1.png
+  - stem4d/experiment/figure-4-2.png
 titleClicks: [1,2]
 columnWidths: [1.5, 2]
 textboxHeight: 10
-mainHeight: 55
+mainHeight: 90
 roundedEdges: false
+imageScale: 0.6
+imageVerticalOffset: [-100, -100]
 ---
 
 
@@ -537,22 +540,19 @@ layout: default
 </div>
 
 ---
-layout: ncolumns
-titleText: "High-Speed RHEED Results"
-columns: 2
-images:
-  - RHEED/Growth_mechanism-svg.svg
-  - RHEED/rheed-vertical.png
-titleClicks: [1, 2]
-columnWidths: [1, 1]
-textboxHeight: 0
-mainHeight: 70
-roundedEdges: false
+layout: default
+dragPos:
+  image1: 680,95,165,400
+  image2: 192,96,356,384
 ---
 
-<template #reference>
+# High-Speed RHEED
+
+<img v-drag="'image2'" src="/RHEED/Growth_mechanism-svg.svg">
+<img v-click v-drag="'image1'" src="/RHEED/rheed-vertical.png">
+
 <Reference reference="Colab: R. Ramesh, Lane Martin (Rice), John Heron (Michigan)" position="bottom" align="left" offset="20px" fontSize='12px' />
-</template>
+
 
 ---
 layout: default
@@ -597,7 +597,7 @@ titles:
   - Crystal Structure
 titleClicks: [1, 2]
 columnWidths: [1, 1]
-textboxHeight: 0
+textboxHeight: 30
 mainHeight: 70
 roundedEdges: false
 ---
@@ -830,7 +830,7 @@ reference: "Collab: Nhan Tran (FermiLabs), Giuseppe Di Guglielmo, Michael E Maue
 - Low power efficiency for remote inference
 
 ---
-layout: main-custom-layout
+layout: default
 titleText: "Experimental Setup"
 mainHeight: 55
 textboxHeight: 0
@@ -846,7 +846,7 @@ reference: "Collab: Nhan Tran (FermiLabs), Giuseppe Di Guglielmo, Michael E Maue
 - Direct optical imaging of tokamak plasma
 
 ---
-layout: main-custom-layout
+layout: default
 titleText: "FPGA Block Diagram"
 mainHeight: 55
 textboxHeight: 0
@@ -884,7 +884,7 @@ roundedEdges: false
 6. 10 ms – 20 ms reading 1 MB block from spinning disk 
 
 ---
-layout: main-custom-layout
+layout: default
 titleText: "FPGA Block Diagram"
 mainHeight: 60
 textboxHeight: 0
@@ -896,5 +896,3 @@ textboxHeight: 0
 
 ::text::
 - How do you efficiently achieve a good tradeoff between latency (power), and accuracy?
-
-
