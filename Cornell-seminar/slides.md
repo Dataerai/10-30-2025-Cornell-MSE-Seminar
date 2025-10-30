@@ -502,7 +502,7 @@ showSlideNumber: true
 dragPos:
   image2: 172,104,236,311
   image1: 414,90,399,347
-  text: 0,-5,0,0
+  text: 41,448,924,42
 ---
 
 # 4D-STEM: Strain Mapping Experimental Results
