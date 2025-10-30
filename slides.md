@@ -1026,7 +1026,7 @@ graph LR
 
     subgraph DataGeneration["<span style='color:#954C9D'> >1000x </span>"]
         direction LR
-        Scientist["<img src='/product-images/scientist.svg' width='150' height='150' style='vertical-align: middle;'/><br/><span style='position: relative; top: -35px;'>Scientist</span>"] 
+        Scientist["<img src='/product-images/scientist.svg' width='150' height='150' style='vertical-align: middle;'/><br/><span style='position: relative; top: -35px;'>Scientist</span>"]
         Microscope["<img src='/product-images/microscope.svg' width='150' height='150' style='vertical-align: middle;'/><br/><span style='position: relative; top: -35px;'>Microscope</span>"]
         Automatic-Data-Curator["<img src='/product-images/business-ai-tech.svg' width='150' height='150' style='vertical-align: middle;'/><br/><span style='position: relative; top: -35px;'>Automatic <br> Data <br> Curator</span>"]
     end
