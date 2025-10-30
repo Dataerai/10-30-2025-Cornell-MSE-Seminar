@@ -219,7 +219,7 @@ layout: default
 showSlideNumber: true
 ---
 
-# Ferroelectric Thin Films: Pulsed Laser Deposition
+# Pulsed Laser Deposition of Ferroelectrics
 
 <CrossfadeImages :images="['pld-schematic/PLD-image.png']" :scale="0.8" style="margin-top: -50px" />
 
@@ -428,14 +428,13 @@ layout: default
 showSlideNumber: true
 dragPos:
   image2: 58,98,355,386
-  image1: 0,-5,0,0
+  image1: 436,123,521,344
 ---
 
 # 4D-STEM: Strain Mapping
 
 <img v-drag="'image2'" src="/stem4d/4d-stem.png">
 <img v-click v-drag="'image1'" src="/stem4d/strain-shear-rotation.png">
-
 
 ---
 layout: default
@@ -959,7 +958,7 @@ showSlideNumber: true
 
 <Reference reference="Colab: Seda Ogrenci (Northwestern), David Flannigan (Minnesota)" position="bottom" align="left" offset="0px" fontSize='10px' />
 
----
+---r
 layout: phrases
 title: "Problem"
 shiftValue: left
