@@ -502,7 +502,7 @@ showSlideNumber: true
 dragPos:
   image2: 172,104,236,311
   image1: 414,90,399,347
-  text: 41,448,924,42
+  text: 0,-5,0,0
 ---
 
 # 4D-STEM: Strain Mapping Experimental Results
@@ -943,6 +943,20 @@ showSlideNumber: true
 <CrossfadeImages :images="[
   'fastml/FastML-NAS.png',
 ]"/>
+
+---
+layout: default
+mainHeight: 70
+textboxHeight: 0
+showSlideNumber: true
+---
+
+# NVIDIA Codesign
+
+<CrossfadeImages :images="[
+  'plume-dynamics/jensen.png',
+]" scale="0.8" style="margin-top: -50px; margin-bottom: -20px"/>
+
 
 ---
 layout: default
