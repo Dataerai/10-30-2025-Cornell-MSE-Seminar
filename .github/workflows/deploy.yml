@@ -31,7 +31,7 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: cd Cornell-seminar && npm ci
+        run: npm ci
 
       - name: Build Slidev
         run: npx slidev build
