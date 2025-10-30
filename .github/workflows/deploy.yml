@@ -34,7 +34,7 @@ jobs:
         run: npm ci
 
       - name: Build Slidev
-        run: npx slidev build
+        run: cd Cornell-seminar && npx slidev build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
