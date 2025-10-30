@@ -3,7 +3,7 @@
 theme: dataerai
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-title: Data Era AI
+title: Dataerai
 info: |
   Cornell MSE Seminar
 
@@ -1185,6 +1185,21 @@ primaryColor="#667eea"
 secondaryColor="#764ba2"
 />
 
+---
+layout: default
+showSlideNumber: true
+mainHeight: 80
+textboxHeight: 0
+---
+
+# DataFed Workflow
+
+<CrossfadeImages :images="[
+  'datafed-workflow/1.png',
+  'datafed-workflow/2.png',
+  'datafed-workflow/3.png',
+  'datafed-workflow/4.png',
+]" />
 
 ---
 layout: ncolumns
