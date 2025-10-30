@@ -31,10 +31,10 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm ci
+        run: cd Cornell-seminar && npm ci
 
       - name: Build Slidev
-        run: cd Cornell-seminar && npx slidev build
+        run: npx slidev build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
