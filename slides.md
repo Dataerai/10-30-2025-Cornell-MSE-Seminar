@@ -1261,7 +1261,7 @@ showSlideNumber: true
 ---
 
 <QrGrid :items="[
-  { title: 'Slides', url: 'https://dataerai.github.io/10-30-2025-Cornell-MSE-Seminar },
+  { title: 'Slides', url: 'https://dataerai.github.io/10-30-2025-Cornell-MSE-Seminar'},
   { title: 'DataFed', url: 'https://datafed.ornl.gov/ui/welcome' },
   { title: 'Learning Symmetries', url: 'https://github.com/yig319/Understanding-Experimental-Images-by-Identifying-Symmetries-with-Deep-Learning' },
   { title: 'RHEED Analysis', url: 'https://github.com/m3-learning/Predicting-Pulsed-Laser-Deposition-SrTiO3-Homoepitaxy-Growth-Dynamics-using-RHEED'},
